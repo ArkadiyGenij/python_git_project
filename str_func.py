@@ -5,6 +5,7 @@ def upper_str(value):
 
 def capitalize_words(input_string):
     """Функция которая первые буквы слов делает заглавными"""
+    """Здесь был выявлен и исправен страшный баг!"""
     words = input_string.split()
     capitalized_words = [word.capitalize() for word in words]
     return ' '.join(capitalized_words)
